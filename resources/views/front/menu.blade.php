@@ -9,9 +9,9 @@
                 <li class="nav-item active">
                     <a class="nav-link dropdown-item" href="{{ route('index') }}">الرئيسية</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-item" href="#">شروحات تقنية</a>
-                </li>
+                {{--<li class="nav-item">--}}
+                    {{--<a class="nav-link dropdown-item" href="#">شروحات تقنية</a>--}}
+                {{--</li>--}}
                 <li class="dropdown nav-item">
                     <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="nav-label">الانواع المتوفرة</span><span class="caret"></span></a>
                     <ul class="dropdown-menu">
@@ -34,18 +34,18 @@
                         <li><a class="nav-link dropdown-item nav_ff" id="3"  href="{{route('mobile_list.index',['market'=>3])}}">مابكو</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-item" href="#">قطع واكسسوارات</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-item" href="#">تطبيقات مهمة</a>
-                </li>
+                {{--<li class="nav-item">--}}
+                    {{--<a class="nav-link dropdown-item" href="#">قطع واكسسوارات</a>--}}
+                {{--</li>--}}
+                {{--<li class="nav-item">--}}
+                    {{--<a class="nav-link dropdown-item" href="#">تطبيقات مهمة</a>--}}
+                {{--</li>--}}
                 <li class="nav-item">
                     <a class="nav-link dropdown-item" href="{{route('about')}}">من نحن</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-item" href="#">اتصل بنا</a>
-                </li>
+                {{--<li class="nav-item">--}}
+                    {{--<a class="nav-link dropdown-item" href="#">اتصل بنا</a>--}}
+                {{--</li>--}}
             </ul>
         </div>
     </div>
