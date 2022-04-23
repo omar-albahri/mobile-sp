@@ -23,5 +23,6 @@ Route::get('/mobile_api/print_emmatel', [MobileController::class,'print_emmatel'
 Route::get('/mobile_api/print_mabco', [MobileController::class,'print_mabco']);
 Route::get('/mobile_api/print_samatel', [MobileController::class,'print_samatel']);
 Route::resource('/', MobileController::class);
+
 Route::resource('/mobile_list', Mobile_queryController::class);
 Route::view('/about','front.about')->name('about');
