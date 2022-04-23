@@ -18,7 +18,7 @@ class CreateBlogsImagesTable extends Migration
             $table->string('name');
             $table->string('alt')->nullable();
             $table->string('description')->nullable();
-            $table->integer('blog_id')->nullable();
+            $table->unsignedBigInteger('blog_id')->nullable();
             $table->foreign('blog_id')->references('id')->on('blogs')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
