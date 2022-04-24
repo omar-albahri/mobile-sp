@@ -44,7 +44,7 @@ class SamatelCommand extends Command
      *
      * @return int
      */
-    public function handle()
+    public static function handle()
     {
        // $category = $this->argument('category');
 

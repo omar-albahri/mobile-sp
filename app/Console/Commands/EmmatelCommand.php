@@ -44,7 +44,7 @@ class EmmatelCommand extends Command
      *
      * @return int
      */
-    public function handle()
+    public static function handle()
     {
             $response = Http::pool(fn(Pool $pool)=>[
                 $pool->withHeaders(["lang"=>"en"])->get(UrlEnum::emmatel_samsung),
