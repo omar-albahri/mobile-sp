@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Artisan;
 use \App\Http\Controllers\mobile\MobileController;
 use \App\Http\Controllers\mobile\Mobile_queryController;
 /*
@@ -15,6 +16,14 @@ use \App\Http\Controllers\mobile\Mobile_queryController;
 */
 
 //my custom Emmatel routes
+Route::get('/mobile_api/update_data', function (){
+    echo 'start';
+    Artisan::call('emmatel');
+    Artisan::call('samatel');
+    Artisan::call('mabco');
+    echo 'success';
+});
+
 Route::get('/mobile/product', [MobileController::class,'product']);
 Route::get('/mobile/category', [MobileController::class,'getcategery']);
 
