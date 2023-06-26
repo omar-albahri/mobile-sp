@@ -77,8 +77,10 @@ class MabcoCommand extends Command
                     $mob = Mobile_price::where('market_id', '=', '3')->where('num', 'like', intval($one['stk_code']))->first();
                     if (!$mob) {
                       //  echo $mob;
-                        $url_img = 'http://'.$one['image_link'];
-                        //bug
+                        $url_img = 'https://'.$one['image_link'];
+                        echo '..............................................';
+                        echo $url_img;
+                        echo '..............................................';
                         // here must check file_get_contents if file does not exist
                         if(Helpfunction::get_http_response_code($url_img) != "200"){
                             echo "error";

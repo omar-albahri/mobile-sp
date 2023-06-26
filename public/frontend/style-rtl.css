@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 a img{ width: 100px;}
 body,html{
   direction: rtl;
   float: right;
   text-align: right;
-  font-family: 'Poppins',sans-serif;
+  /*font-family: 'Poppins',sans-serif;*/
+  font-family: 'Droid Arabic Kufi', serif !important;
   color :#222;
   height: 100%;
   width: 100%;
@@ -14,7 +16,7 @@ body,html{
 }
 .navbar{padding: .8rem;}
 .navbar-nav li{padding-right: 20px;}
-.nav-link{ font-size: 1.1em !important;}
+.nav-link{ font-size: 1em !important;}
 
 .dropdown:hover > .dropdown-menu {
     display: block;
@@ -110,7 +112,9 @@ color: #a30005;
 color: #aaaaaa;
 }
 footer{
-  background-color: #3f3f3f;
+  /* background-color: #3f3f3f; */
+      background: linear-gradient( #6f6f6f,#3f3f3f);
+    animation: gradient 10s ease infinite;
   color: #d5d5d5;
   padding-top: 2rem;
 }
@@ -489,4 +493,28 @@ background-color: ghostwhite;
     padding: 0.8rem;
     background: linear-gradient(to top right, #d5d5d5, #f9f9f9);
     animation: gradient 10s ease infinite;
+}
+/*
+.page-link {
+    max-width: 1em !important;
+}
+
+a.page-link {
+    padding: 0.5em;
+}
+*/
+.lead{
+font-size: 1rem;
+}
+ul.pagination{
+        overflow: hidden;
+        
+}
+body{
+    /* background-color: #a2a2a1; */
+    background-color: #FAF9F6;
+    /* background-color: #f1f4ff; */
+      background-image: url("https://3.bp.blogspot.com/-6eFhBSxeK98/XtPLIfm0Z5I/AAAAAAAAPP8/A9G2QWFVvV0CgWA5MQIQmY_6HqfxuI4egCK4BGAYYCw/s0/mobile%2Bprice%2Bbackground.png");
+
+  background-repeat: repeat;
 }

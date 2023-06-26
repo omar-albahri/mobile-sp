@@ -27,7 +27,7 @@ class MobileController extends Controller
     }
     public function print_emmatel()
     {
-        $models=Mobile_price::all()->where('market_id','=',1)->where('available','=',true);
+        $models=Mobile_price::all()->where('market_id','=',1)->where('available','=',true)->sortBy(['type','category','price']);
         foreach ($models as $one){
             echo $one['category']." ".$one['mobile_name']." : ".$one['price'];
             echo "<br>";
@@ -35,7 +35,7 @@ class MobileController extends Controller
     }
     public function print_samatel()
     {
-        $models=Mobile_price::all()->where('market_id','=',2)->where('available','=',true)->sortBy(['category','price']);
+        $models=Mobile_price::all()->where('market_id','=',2)->where('available','=',true)->sortBy(['type','category','price']);
         foreach ($models as $one){
             echo $one['category']." ".$one['mobile_name']." : ".$one['price'];
             echo "<br>";
@@ -43,7 +43,7 @@ class MobileController extends Controller
     }
     public function print_mabco()
     {
-        $models=Mobile_price::all()->where('market_id','=',3)->where('available','=',true)->sortBy('mobile_name');
+        $models=Mobile_price::all()->where('market_id','=',3)->where('available','=',true)->sortBy(['type','category','price']);
         foreach ($models as $one){
             echo $one['mobile_name']." : ".$one['price'];
             echo "<br>";

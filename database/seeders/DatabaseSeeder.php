@@ -2,6 +2,9 @@
 
 namespace Database\Seeders;
 
+use App\Console\Commands\EmmatelCommand;
+use App\Console\Commands\MabcoCommand;
+use App\Console\Commands\SamatelCommand;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +16,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+//        $this->call(market::class);
+//
+//        $this->call(EmmatelCommand::class);
+//        $this->call(SamatelCommand::class);
+//        $this->call(MabcoCommand::class);
     }
 }

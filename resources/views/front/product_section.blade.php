@@ -1,4 +1,4 @@
-<div class="container-fluid padding">
+<div class="container-fluid padding wow fadeInUp" data-wow-delay="0.2s">
     <div class="row welcome text-center">
         <div class="col-12">
             <h2 class="text-center"> الاجهزة المتوفرة</h2>

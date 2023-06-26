@@ -1,7 +1,7 @@
-<div class="row" >
+<div class="row"   >
 <?php foreach ($models as $one){ ?>
-<div class="col-xs-6 col-md-3 col-lg-3">
-    <div class="mobile-product-parent " >
+<div class="col-xs-6 col-md-3 col-lg-3 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="mobile-product-parent">
         <div class="card mobile-product-child">
             <img class="card-img-top" src="{{$one->image?asset('../storage/app/'. $one->image):asset('../storage/app/no-image.jpg')}}"/>
             <div class="card-body">
@@ -16,6 +16,6 @@
 </div>
 <?php } ?>
 </div>
-<div class=" pagination justify-content-center pagination-info mt-2"> {{$models->withQueryString()->onEachSide(2)->links()}}</div>
+<div class=" pagination pagination-sm   justify-content-center pagination-info mt-2"> {{$models->withQueryString()->onEachSide(4)->links()}}</div>
 
 

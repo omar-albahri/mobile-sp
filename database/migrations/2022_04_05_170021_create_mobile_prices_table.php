@@ -34,9 +34,9 @@ class CreateMobilePricesTable extends Migration
             $table->string('link');
             $table->string('type')->nullable();
             $table->boolean('available')->default(true);
-            $table->integer('market_id');
+            $table->bigInteger('market_id')->unsigned();
             $table->foreign('market_id')->references('id')->on('markets')->onDelete('cascade')->onUpdate('cascade');
-            $table->primary(['market_id','num']);
+//            $table->primary(['market_id','num']);
             $table->timestamps();
         });
     }

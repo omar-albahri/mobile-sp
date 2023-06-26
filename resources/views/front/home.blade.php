@@ -9,12 +9,15 @@
     <div class="container-fluid">
         <div class="row jumbotron">
             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <h1 class="lead">اسعار الموبايلات في سوريا</h1>
                 <p class="lead"> موقع متخصص بعرض اسعار الموبايلات المتوفر بالسوق السورية من خلال عرض الاجهزة المتوفرة في وكالات ايماتيل وسماتيل ومابكو
                     جميع الاسعار الموجودة بالموقع  يتم نقلها يومياً من المواقع الالكترونية الرسمية للوكالات باستخدام احدث التقنيات لتتم مواكبة  اسعار الأجهزة المتوفرة</p>
             </div>
+<!--
             <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
                 <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">عرض المزيد</button></a>
             </div>
+            -->
         </div>
     </div>
 @endsection('welcome')
@@ -30,18 +33,28 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="{{asset('frontend/img/background1.jpg') }}" />
+<!--
                 <div class="carousel-caption">
-                    <h1 class="display-2">bootstrap</h1>
-                    <h3>Complete Website Layout</h3>
-                    <button type="button" class="btn btn-outline-light btn-lg">View Demo</button>
-                    <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+                    <h1 class="display-2">يمكنكم زيارة صفحتنا على الفيس بوك</h1>
+                    <h3>أكثر من 30 الف معجب</h3>
                 </div>
+ -->
             </div>
             <div class="carousel-item">
                 <img src="{{asset('frontend/img/background2.jpg') }}" />
             </div>
             <div class="carousel-item">
                 <img src="{{asset('frontend/img/background3.jpg') }}" />
+                 <div class="carousel-caption">
+                 <!--
+                    <h1 class="display-2">أسعار ومواصفات الموبايلات في سوريا</h1>
+                    <h3>مقارنة شاملة لأسعار  الاجهزة</h3>
+                     
+                     <button type="button" class="btn btn-outline-light btn-lg">View Demo</button>
+                     <button type="button" class="btn btn-primary btn-lg">Get Started</button>
+                 -->    
+
+                </div>
             </div>
         </div>
     </div>

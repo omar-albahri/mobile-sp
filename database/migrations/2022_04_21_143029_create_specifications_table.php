@@ -26,8 +26,8 @@ class CreateSpecificationsTable extends Migration
             $table->string('cpu')->nullable();
             $table->string('key')->nullable();
             $table->string('value')->nullable();
-            $table->foreign(['market_id','num'])->references(['market_id','num'])->on('markets')->onDelete('cascade')->onUpdate('cascade');
-            $table->foreign('market_id')->references('id')->on('markets')->onDelete('cascade')->onUpdate('cascade');
+//            $table->foreign(['market_id','num'])->references(['market_id','num'])->on('markets')->onDelete('cascade')->onUpdate('cascade');
+//            $table->foreign('market_id')->references('id')->on('markets')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

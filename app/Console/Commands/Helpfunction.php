@@ -8,7 +8,7 @@ namespace App\Console\Commands;
  * Time: 01:12 ص
  */
 class Helpfunction{
-    public function get_http_response_code($url) {
+    public static function get_http_response_code($url) {
         $headers = get_headers($url);
         return substr($headers[0], 9, 3);
     }
